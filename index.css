@@ -10,6 +10,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .nft-img img{
     width: 302px;
@@ -17,6 +18,42 @@
     object-fit: cover;
     margin: 24px;
     border-radius: 8px;
+    position: relative;
+}
+.view-icon{
+    position: absolute;
+    margin: 43%;
+    opacity: 0;
+    z-index: 1;
+
+}
+.hov:hover .view-icon{
+     opacity: 1;
+     cursor: pointer;
+     
+}
+.hov{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    
+}
+.img-back{
+    width: 302px;
+    height: 302px;
+    object-fit: cover;
+    margin: 24px;
+    border-radius: 8px;
+    background-color: #00FFF8;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nft-img:hover .img-back{
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
 }
 .nft-box{
     width: 350px;
@@ -34,6 +71,11 @@
     color: #fff;
     line-height: 28px;
     padding-bottom: 16px;
+    display: inline;
+}
+h3:hover{
+    color: #00FFF8;
+    cursor: pointer;
 }
 .nft-text p{
     font-size: 18px;
@@ -101,4 +143,8 @@
 }
 .name{
     color: #ffffff;
+}
+.name:hover{
+    color: #00FFF8;
+    cursor: pointer;
 }

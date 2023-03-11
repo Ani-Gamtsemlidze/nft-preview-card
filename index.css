@@ -59,6 +59,7 @@
     cursor: pointer;
 }
 .nft-box{
+    width: 100%;
     max-width: 350px;
     background: #15263F;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
